@@ -1,7 +1,6 @@
-@import './reset.css';
-
 @import 'tailwindcss';
 @import 'tw-animate-css';
+@import './reset.css';
 
 @custom-variant dark (&:is(.dark *));
 

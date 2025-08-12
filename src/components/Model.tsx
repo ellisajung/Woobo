@@ -16,7 +16,7 @@ export function Model(props: JSX.IntrinsicElements['group']) {
 	const { nodes, materials } = useGLTF('/ci.glb') as unknown as GLTFResult;
 	return (
 		<group {...props} dispose={null}>
-			<group scale={0.03}>
+			<group scale={0.03} rotation={[0, (-23 * Math.PI) / 180, 0]}>
 				<PerspectiveCamera
 					makeDefault={false}
 					far={100000}

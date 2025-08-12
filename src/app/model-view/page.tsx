@@ -3,6 +3,7 @@
 import { Model } from '@/components/Model';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Environment } from '@react-three/drei';
+import { ParallaxCamera } from '@/components/ParallaxCamera';
 
 const ModelViewPage = () => {
 	return (
@@ -12,6 +13,7 @@ const ModelViewPage = () => {
 			<Model />
 			<OrbitControls enablePan={true} enableZoom={false} enableRotate={true} />
 			<Environment preset='city' />
+			<ParallaxCamera sensitivity={0.85} smoothness={0.1} />
 		</Canvas>
 	);
 };
